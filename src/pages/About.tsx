@@ -32,28 +32,28 @@ const About = () => {
 
   const team = [
     {
-      name: 'Sarah Mitchell',
-      role: 'Principal Architect',
-      experience: '20+ Years Experience',
-      specialization: 'Sustainable Design, Residential Architecture'
+      name: 'Abdul Qayum',
+      role: 'Senior Partner',
+      experience: 'Senior Architect',
+      specialization: 'Architectural Design & Project Leadership'
     },
     {
-      name: 'David Chen',
-      role: 'Senior Architect',
-      experience: '15+ Years Experience', 
-      specialization: 'Commercial Projects, Urban Planning'
+      name: 'Samrina',
+      role: 'Senior Partner',
+      experience: 'Interior Design Consultant', 
+      specialization: 'Interior Design & Space Planning'
     },
     {
-      name: 'Elena Rodriguez',
-      role: 'Design Director',
-      experience: '12+ Years Experience',
-      specialization: 'Interior Design, Space Planning'
+      name: 'Ali Hamza',
+      role: 'Associate Partner',
+      experience: 'Project Management Specialist',
+      specialization: 'Overseas Project Management, Budgeting & Technical'
     },
     {
-      name: 'Michael Thompson',
-      role: 'Project Manager',
-      experience: '18+ Years Experience',
-      specialization: 'Construction Administration, Project Delivery'
+      name: 'Mussa Kashif',
+      role: 'Associate Partner',
+      experience: 'Marketing Director',
+      specialization: 'Business Development & Marketing Strategy'
     }
   ];
 
