@@ -57,6 +57,31 @@ export default {
           border: "hsl(var(--sidebar-border))",
           ring: "hsl(var(--sidebar-ring))",
         },
+        // Vivant architectural colors
+        gold: {
+          DEFAULT: "hsl(var(--accent-gold))",
+          foreground: "hsl(var(--accent-gold-foreground))",
+        },
+        hero: {
+          DEFAULT: "hsl(var(--hero-background))",
+          foreground: "hsl(var(--hero-foreground))",
+          accent: "hsl(var(--hero-accent))",
+        },
+      },
+      fontFamily: {
+        'heading': 'var(--font-heading)',
+        'body': 'var(--font-body)',
+      },
+      maxWidth: {
+        'content': 'var(--content-max-width)',
+      },
+      spacing: {
+        'section': 'var(--section-padding)',
+      },
+      boxShadow: {
+        'soft': '0 8px 32px hsl(var(--shadow-soft))',
+        'medium': '0 12px 40px hsl(var(--shadow-medium))',
+        'strong': '0 16px 48px hsl(var(--shadow-strong))',
       },
       borderRadius: {
         lg: "var(--radius)",
