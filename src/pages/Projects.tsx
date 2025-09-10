@@ -87,47 +87,28 @@ const Projects = () => {
           <div className="min-h-[60vh] flex items-center">
             <div className="max-w-3xl space-y-6">
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-hero-foreground">
-                Our
-                <span className="text-gold block">Portfolio</span>
+                Our Remote Team's
+                <span className="text-gold block">Work Portfolio</span>
               </h1>
               <p className="text-xl text-hero-foreground/80 leading-relaxed">
-                Explore our diverse collection of architectural projects, 
-                each one a testament to innovative design and exceptional craftsmanship.
+                See the quality of work our remote architectural professionals deliver 
+                for US firms across various project types.
               </p>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Project Categories */}
+      {/* Featured Projects Grid */}
       <section className="section-padding bg-background">
         <div className="content-container">
           <SectionHeader
-            subtitle="Our Work"
-            title="150+ Successful Projects"
-            description="From intimate residential spaces to large-scale commercial developments, we've delivered exceptional results across all project types."
+            subtitle="Featured Projects"
+            title="Quality Work by Our Remote Team"
+            description="Examples of projects completed by our remote architectural professionals working with US firms."
           />
-
-          <div className="mt-12 flex flex-wrap justify-center gap-4">
-            {projectCategories.map((category, index) => (
-              <Badge 
-                key={index} 
-                variant={index === 0 ? "default" : "outline"}
-                className={`px-4 py-2 text-sm font-medium cursor-pointer transition-smooth hover:bg-gold hover:text-gold-foreground ${
-                  index === 0 ? 'bg-gold text-gold-foreground' : ''
-                }`}
-              >
-                {category.name} ({category.count})
-              </Badge>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Featured Projects Grid */}
-      <section className="section-padding bg-secondary">
-        <div className="content-container">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          
+          <div className="mt-16 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {featuredProjects.map((project) => (
               <Card key={project.id} className="card-elevated hover:shadow-medium transition-smooth group">
                 <div className="aspect-video bg-gradient-to-br from-gold/20 to-primary/20 relative overflow-hidden">
@@ -175,68 +156,9 @@ const Projects = () => {
                       </Badge>
                     ))}
                   </div>
-                  
-                  <div className="pt-4 border-t space-y-2">
-                    <div className="grid grid-cols-1 gap-2 text-xs text-muted-foreground">
-                      <div className="flex justify-between">
-                        <span>Size:</span>
-                        <span className="font-medium">{project.stats.size}</span>
-                      </div>
-                      <div className="flex justify-between">
-                        <span>Timeline:</span>
-                        <span className="font-medium">{project.stats.timeline}</span>
-                      </div>
-                      <div className="flex justify-between">
-                        <span>Team:</span>
-                        <span className="font-medium">{project.stats.team}</span>
-                      </div>
-                    </div>
-                  </div>
                 </CardContent>
               </Card>
             ))}
-          </div>
-
-          <div className="mt-16 text-center">
-            <Button 
-              variant="outline"
-              size="lg"
-              className="border-primary text-primary hover:bg-primary hover:text-primary-foreground"
-            >
-              Load More Projects
-            </Button>
-          </div>
-        </div>
-      </section>
-
-      {/* Project Stats */}
-      <section className="section-padding bg-background">
-        <div className="content-container">
-          <div className="grid grid-cols-2 lg:grid-cols-4 gap-8 text-center">
-            <div className="space-y-2">
-              <div className="text-4xl md:text-5xl font-bold text-gold">150+</div>
-              <div className="text-sm font-medium text-muted-foreground uppercase tracking-wider">
-                Projects Completed
-              </div>
-            </div>
-            <div className="space-y-2">
-              <div className="text-4xl md:text-5xl font-bold text-gold">$2.5B</div>
-              <div className="text-sm font-medium text-muted-foreground uppercase tracking-wider">
-                Project Value
-              </div>
-            </div>
-            <div className="space-y-2">
-              <div className="text-4xl md:text-5xl font-bold text-gold">25+</div>
-              <div className="text-sm font-medium text-muted-foreground uppercase tracking-wider">
-                Years Experience
-              </div>
-            </div>
-            <div className="space-y-2">
-              <div className="text-4xl md:text-5xl font-bold text-gold">50+</div>
-              <div className="text-sm font-medium text-muted-foreground uppercase tracking-wider">
-                Awards Won
-              </div>
-            </div>
           </div>
         </div>
       </section>
@@ -246,11 +168,11 @@ const Projects = () => {
         <div className="content-container text-center">
           <div className="max-w-3xl mx-auto space-y-6">
             <h2 className="text-3xl md:text-4xl font-bold">
-              Ready to Create Something Amazing?
+              Need Skilled Remote Architects?
             </h2>
             <p className="text-xl text-primary-foreground/80">
-              Let's discuss how we can bring your architectural vision to life with the same 
-              dedication and expertise showcased in our portfolio.
+              Scale your firm with remote professionals who deliver this level of quality work. 
+              Get matched with qualified talent in 2 weeks.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button 
@@ -258,7 +180,7 @@ const Projects = () => {
                 size="lg"
                 className="bg-gold hover:bg-gold/90 text-gold-foreground"
               >
-                <Link to="/contact">Start Your Project</Link>
+                <Link to="/contact">Hire Remote Staff</Link>
               </Button>
               <Button 
                 asChild

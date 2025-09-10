@@ -9,32 +9,30 @@ import Layout from '@/components/layout/Layout';
 const Home = () => {
   const services = [
     {
+      icon: Users,
+      title: 'Remote Architects',
+      description: 'Licensed architects with 5+ years experience in US projects. Handle design development, technical drawings, and project coordination.',
+    },
+    {
       icon: Building2,
-      title: 'Architectural Design',
-      description: 'Innovative design solutions that blend functionality with aesthetic excellence for residential and commercial projects.',
+      title: 'CAD Designers',
+      description: 'Expert CAD professionals proficient in AutoCAD, Revit, and other industry-standard software for technical documentation.',
     },
     {
       icon: Compass,
-      title: 'Planning & Consulting',
-      description: 'Strategic planning and expert consultation to guide your project from concept through completion.',
-    },
-    {
-      icon: Users,
-      title: 'Project Management',
-      description: 'Comprehensive project oversight ensuring timely delivery, quality control, and seamless coordination.',
+      title: 'Draftspersons',
+      description: 'Skilled technical drafters for construction documents, detailed drawings, and architectural plan development.',
     },
     {
       icon: Award,
-      title: 'Sustainable Solutions',
-      description: 'Environmentally conscious design approaches that reduce impact while maximizing efficiency and beauty.',
+      title: 'Interior Designers',
+      description: 'Creative interior designers specializing in space planning, material selection, and 3D visualization for commercial and residential projects.',
     },
   ];
 
   const stats = [
     { number: '150+', label: 'Projects Completed' },
     { number: '25+', label: 'Years Experience' },
-    { number: '98%', label: 'Client Satisfaction' },
-    { number: '50+', label: 'Awards Won' },
   ];
 
   return (
@@ -47,12 +45,12 @@ const Home = () => {
             <div className="max-w-4xl space-y-8">
               <div className="space-y-6">
                 <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-hero-foreground leading-tight">
-                  Crafting Spaces That
-                  <span className="text-gold block">Inspire Living</span>
+                  Scale Your Firm With
+                  <span className="text-gold block">Remote Architects</span>
                 </h1>
                 <p className="text-xl md:text-2xl text-hero-foreground/80 max-w-2xl leading-relaxed">
-                  Award-winning architectural consultants creating exceptional spaces 
-                  that blend innovation, sustainability, and timeless design.
+                  Expert architectural professionals ready to augment your team. 
+                  From concept to completion, we provide skilled remote staff at $2000-$4000 per month.
                 </p>
               </div>
               <div className="flex flex-col sm:flex-row gap-4">
@@ -62,7 +60,7 @@ const Home = () => {
                   className="bg-gold hover:bg-gold/90 text-gold-foreground font-semibold"
                 >
                   <Link to="/projects">
-                    View Our Work <ArrowRight className="ml-2 h-5 w-5" />
+                    View Our Team <ArrowRight className="ml-2 h-5 w-5" />
                   </Link>
                 </Button>
                 <Button 
@@ -71,7 +69,7 @@ const Home = () => {
                   size="lg"
                   className="border-2 border-hero-foreground text-hero-foreground hover:bg-hero-foreground hover:text-hero font-semibold"
                 >
-                  <Link to="/contact">Get Consultation</Link>
+                  <Link to="/contact">Hire Remote Staff</Link>
                 </Button>
               </div>
             </div>
@@ -87,8 +85,8 @@ const Home = () => {
         <div className="content-container">
           <SectionHeader
             subtitle="Our Services"
-            title="Comprehensive Architectural Solutions"
-            description="From initial concept to final completion, we provide end-to-end architectural services tailored to your unique vision and requirements."
+            title="Remote Architectural Staff Augmentation"
+            description="Scale your architectural firm with skilled remote professionals. Get instant access to qualified architects, designers, and drafters."
           />
           
           <div className="mt-16 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
@@ -137,32 +135,32 @@ const Home = () => {
             <div className="space-y-6">
               <SectionHeader
                 subtitle="About Vivant"
-                title="Design Excellence Since 1999"
-                description="With over two decades of experience, Vivant Architectural Consultants has established itself as a leader in innovative, sustainable design solutions."
+                title="Your Global Architectural Partner Since 1999"
+                description="We've been helping US architectural firms scale efficiently with remote talent, delivering quality work across 150+ projects worldwide."
                 alignment="left"
               />
               <div className="space-y-4">
-                <div className="flex items-start space-x-3">
-                  <div className="w-2 h-2 bg-gold rounded-full mt-2 flex-shrink-0" />
-                  <p className="text-muted-foreground">
-                    Award-winning designs recognized by international architectural bodies
-                  </p>
-                </div>
-                <div className="flex items-start space-x-3">
-                  <div className="w-2 h-2 bg-gold rounded-full mt-2 flex-shrink-0" />
-                  <p className="text-muted-foreground">
-                    Sustainable practices that minimize environmental impact
-                  </p>
-                </div>
-                <div className="flex items-start space-x-3">
-                  <div className="w-2 h-2 bg-gold rounded-full mt-2 flex-shrink-0" />
-                  <p className="text-muted-foreground">
-                    Collaborative approach ensuring client vision comes to life
-                  </p>
-                </div>
+                  <div className="flex items-start space-x-3">
+                    <div className="w-2 h-2 bg-gold rounded-full mt-2 flex-shrink-0" />
+                    <p className="text-muted-foreground">
+                      Vetted architectural professionals with US project experience
+                    </p>
+                  </div>
+                  <div className="flex items-start space-x-3">
+                    <div className="w-2 h-2 bg-gold rounded-full mt-2 flex-shrink-0" />
+                    <p className="text-muted-foreground">
+                      Cost-effective solutions saving 40-60% on staffing costs
+                    </p>
+                  </div>
+                  <div className="flex items-start space-x-3">
+                    <div className="w-2 h-2 bg-gold rounded-full mt-2 flex-shrink-0" />
+                    <p className="text-muted-foreground">
+                      Seamless integration with your existing workflows and tools
+                    </p>
+                  </div>
               </div>
               <Button asChild className="bg-primary hover:bg-primary/90">
-                <Link to="/about">Learn More About Us</Link>
+                <Link to="/about">See Our Process</Link>
               </Button>
             </div>
             <div className="relative">
@@ -178,11 +176,11 @@ const Home = () => {
         <div className="content-container text-center">
           <div className="max-w-3xl mx-auto space-y-6">
             <h2 className="text-3xl md:text-4xl font-bold">
-              Ready to Transform Your Vision?
+              Ready to Scale Your Firm?
             </h2>
             <p className="text-xl text-primary-foreground/80">
-              Let's discuss how we can bring your architectural dreams to life 
-              with our expertise and innovative approach.
+              Get qualified remote architectural talent within 2 weeks. 
+              No hiring hassles, no long-term commitments.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button 
@@ -190,7 +188,7 @@ const Home = () => {
                 size="lg"
                 className="bg-gold hover:bg-gold/90 text-gold-foreground"
               >
-                <Link to="/contact">Start Your Project</Link>
+                <Link to="/contact">Hire Remote Staff</Link>
               </Button>
               <Button 
                 asChild
