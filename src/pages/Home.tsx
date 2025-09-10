@@ -69,7 +69,7 @@ const Home = () => {
                   asChild
                   variant="outline" 
                   size="lg"
-                  className="border-hero-foreground/30 text-hero-foreground hover:bg-hero-foreground/10"
+                  className="border-2 border-hero-foreground text-hero-foreground hover:bg-hero-foreground hover:text-hero font-semibold"
                 >
                   <Link to="/contact">Get Consultation</Link>
                 </Button>
